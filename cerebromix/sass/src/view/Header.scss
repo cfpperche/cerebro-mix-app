@@ -1,0 +1,17 @@
+$cerebromix-header-background-color: #81af34;
+$cerebromix-header-text-color: white;
+$cerebromix-header-text-shadow-color: #4e691f;
+
+#app-header {
+    @include background-image(linear-gradient(top, lighten($cerebromix-header-background-color, 5), darken($cerebromix-header-background-color, 5)));
+    border-bottom: 1px solid darken($cerebromix-header-background-color, 15);
+}
+
+#app-header-title {
+    padding: 15px 10px 10px 31px;
+    background: url(images/logo.png) no-repeat 10px 11px;
+    color: $cerebromix-header-text-color;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 $cerebromix-header-text-shadow-color;
+}

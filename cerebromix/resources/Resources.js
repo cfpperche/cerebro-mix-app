@@ -1,0 +1,1 @@
+console.log("Resources.js loaded.")

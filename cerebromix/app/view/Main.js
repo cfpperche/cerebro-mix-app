@@ -4,7 +4,7 @@ Ext.define('CerebroMix.view.Main', {
     requires: [
         'CerebroMix.view.Header',
         'CerebroMix.view.Footer',
-        'CerebroMix.view.menu.Accordion',
+        'CerebroMix.view.menu.MainMenu',
         'CerebroMix.view.MainPanel'
     ],
 
@@ -23,7 +23,6 @@ Ext.define('CerebroMix.view.Main', {
             xtype: 'appfooter'
         }, {
             xtype: 'mainmenu',
-            // width: 185,
             collapsible: true,
             region: 'west'
         },

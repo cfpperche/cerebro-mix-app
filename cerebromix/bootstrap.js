@@ -13,19 +13,31 @@ Ext.Loader.addClassPathMappings({
 });
 Ext.ClassManager.addNameAlternateMappings({
   "CerebroMix.Application": [],
-  "CerebroMix.Glyphs": [],
   "CerebroMix.controller.Main": [],
   "CerebroMix.controller.Menu": [],
-  "CerebroMix.model.MenuItem": [],
-  "CerebroMix.model.MenuRoot": [],
+  "CerebroMix.controller.TranslationManager": [],
+  "CerebroMix.controller.dashboard.Stocks": [],
+  "CerebroMix.model.dashboard.RadarDataSet": [],
+  "CerebroMix.model.dashboard.Stock": [],
+  "CerebroMix.model.menu.Item": [],
+  "CerebroMix.model.menu.Root": [],
   "CerebroMix.store.Menu": [],
+  "CerebroMix.store.dashboard.RadarDataSets": [],
+  "CerebroMix.store.dashboard.Stocks": [],
   "CerebroMix.view.Footer": [],
   "CerebroMix.view.Header": [],
   "CerebroMix.view.Main": [],
   "CerebroMix.view.MainPanel": [],
+  "CerebroMix.view.Translation": [],
   "CerebroMix.view.Viewport": [],
-  "CerebroMix.view.menu.Accordion": [],
+  "CerebroMix.view.dashboard.Dashboard": [],
+  "CerebroMix.view.dashboard.StockBar": [],
+  "CerebroMix.view.dashboard.StockForm": [],
+  "CerebroMix.view.dashboard.StockGrid": [],
+  "CerebroMix.view.dashboard.StockRadar": [],
   "CerebroMix.view.menu.Item": [],
+  "CerebroMix.view.menu.MainMenu": [],
+  "CerebroMix.view.toolbar.Toolbar": [],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],
   "Ext.AbstractPlugin": [],
@@ -861,12 +873,17 @@ Ext.ClassManager.addNameAlternateMappings({
 });
 Ext.ClassManager.addNameAliasMappings({
   "CerebroMix.Application": [],
-  "CerebroMix.Glyphs": [],
   "CerebroMix.controller.Main": [],
   "CerebroMix.controller.Menu": [],
-  "CerebroMix.model.MenuItem": [],
-  "CerebroMix.model.MenuRoot": [],
+  "CerebroMix.controller.TranslationManager": [],
+  "CerebroMix.controller.dashboard.Stocks": [],
+  "CerebroMix.model.dashboard.RadarDataSet": [],
+  "CerebroMix.model.dashboard.Stock": [],
+  "CerebroMix.model.menu.Item": [],
+  "CerebroMix.model.menu.Root": [],
   "CerebroMix.store.Menu": [],
+  "CerebroMix.store.dashboard.RadarDataSets": [],
+  "CerebroMix.store.dashboard.Stocks": [],
   "CerebroMix.view.Footer": [
     "widget.appfooter"
   ],
@@ -879,12 +896,33 @@ Ext.ClassManager.addNameAliasMappings({
   "CerebroMix.view.MainPanel": [
     "widget.mainpanel"
   ],
+  "CerebroMix.view.Translation": [
+    "widget.translation"
+  ],
   "CerebroMix.view.Viewport": [],
-  "CerebroMix.view.menu.Accordion": [
-    "widget.mainmenu"
+  "CerebroMix.view.dashboard.Dashboard": [
+    "widget.dashboard"
+  ],
+  "CerebroMix.view.dashboard.StockBar": [
+    "widget.stockbar"
+  ],
+  "CerebroMix.view.dashboard.StockForm": [
+    "widget.stockform"
+  ],
+  "CerebroMix.view.dashboard.StockGrid": [
+    "widget.stockgrid"
+  ],
+  "CerebroMix.view.dashboard.StockRadar": [
+    "widget.stockradar"
   ],
   "CerebroMix.view.menu.Item": [
     "widget.mainmenuitem"
+  ],
+  "CerebroMix.view.menu.MainMenu": [
+    "widget.mainmenu"
+  ],
+  "CerebroMix.view.toolbar.Toolbar": [
+    "widget.apptoolbar"
   ],
   "Ext.AbstractComponent": [],
   "Ext.AbstractManager": [],

@@ -2,14 +2,14 @@ Ext.define('CerebroMix.controller.Menu', {
     extend: 'Ext.app.Controller',
 
     models: [
-        'MenuRoot',
-        'MenuItem'
+        'menu.Root',
+        'menu.Item'
     ],
     stores: [
         'Menu'
     ],
     views: [
-        'menu.Accordion',
+        'menu.MainMenu',
         'menu.Item'
     ],
     refs: [{
@@ -26,7 +26,7 @@ Ext.define('CerebroMix.controller.Menu', {
 
                 var menu = Ext.create('CerebroMix.view.menu.Item', {
                     title: root.get('title'),
-                    iconCls: root.get('iconCls')
+                    glyph: root.get('iconCls')
                 });
 
                 Ext.each(root.items(), function(itens) {
@@ -36,7 +36,7 @@ Ext.define('CerebroMix.controller.Menu', {
                         menu.getRootNode().appendChild({
                             text: item.get('text'),
                             leaf: true,
-                            iconCls: item.get('iconCls'),
+                            iconCls: root.get('iconCls'),
                             id: item.get('id'),
                             className: item.get('className')
                         });
@@ -59,16 +59,20 @@ Ext.define('CerebroMix.controller.Menu', {
             });
 
         //console.log(record.raw.className);
+        if (mainPanel.items.getCount(newTab) > 1 && !newTab) {
+            mainPanel.remove(mainPanel.items.getAt(1), true);
+            // console.log('teste');
+        };
 
         if (!newTab) {
             newTab = mainPanel.add({
                 xtype: record.raw.className,
                 closable: true,
-                iconCls: record.get('iconCls'),
+                glyph: record.get('iconCls'),
                 title: record.get('text')
             });
-        }
 
+        }
         mainPanel.setActiveTab(newTab);
     },
 

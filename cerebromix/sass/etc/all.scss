@@ -1,0 +1,29 @@
+/** flags */
+$br-flag: 'images/flags/br.png';
+$en-flag: 'images/flags/us.png';
+$es-flag: 'images/flags/es.png';
+
+.pt_BR {
+  background-image:url($br-flag);
+  background-repeat:no-repeat;
+}
+
+.en {
+  background-image:url($en-flag);
+  background-repeat:no-repeat;
+}
+
+.es {
+  background-image:url($es-flag);
+  background-repeat:no-repeat;
+}
+
+/** icons **/
+
+$logout: 'images/icons/logout.png';
+
+.logout {
+  color: red;
+  // background-image:url($logout);
+  // background-repeat:no-repeat;
+}

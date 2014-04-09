@@ -25,9 +25,9 @@
 Ext.define('CerebroMix.store.Menu', {
     extend: 'Ext.data.Store',
     requires: [
-        'CerebroMix.model.MenuRoot'
+        'CerebroMix.model.menu.Root'
     ],
-    model: 'CerebroMix.model.MenuRoot',
+    model: 'CerebroMix.model.menu.Root',
     proxy: {
         type: 'ajax',
         url: 'data/menu.json',

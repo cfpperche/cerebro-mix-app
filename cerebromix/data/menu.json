@@ -1,47 +1,32 @@
 {
     "items": [{
         "title": "Dashboard",
-        "iconCls": "folder_user",
+        "iconCls": "xf108@FontAwesome",
         "id": "1",
         "items": [{
-            "text": "menu 1.1",
-            "iconCls": "user_female",
+            "text": "Profile",
+            "iconCls": "icon-music",
             "menu_id": "1",
             "id": "11"
         }, {
-            "text": "menu 1.2",
-            "iconCls": "user_gray",
-            "menu_id": "1",
+            "text": "Report",
+            "iconCls": "xf00c@FontAwesome",
+            "menu_id": "2",
             "id": "12"
         }, {
-            "text": "menu 1.3",
-            "iconCls": "user_green",
-            "menu_id": "1",
+            "text": "Calendar",
+            "iconCls": "xf00c@FontAwesome",
+            "menu_id": "3",
             "id": "13"
         }, {
-            "text": "menu 1.4",
-            "iconCls": "user_orange",
-            "menu_id": "1",
+            "text": "Note",
+            "iconCls": "xf00c@FontAwesome",
+            "menu_id": "4",
             "id": "14"
-        }, {
-            "text": "menu 1.5",
-            "iconCls": "user_red",
-            "menu_id": "1",
-            "id": "15"
-        }, {
-            "text": "menu 1.6",
-            "iconCls": "user_suit",
-            "menu_id": "1",
-            "id": "16"
-        }, {
-            "text": "menu 1.7",
-            "iconCls": "user",
-            "menu_id": "1",
-            "id": "17"
         }]
     }, {
         "title": "Configuration",
-        "iconCls": "computer",
+        "iconCls": "xf013@FontAwesome",
         "id": "2",
         "items": [{
             "text": "menu 2.1",
@@ -66,7 +51,7 @@
         }]
     }, {
         "title": "Cerebro Mix",
-        "iconCls": "table",
+        "iconCls": "xf17c@FontAwesome",
         "id": "3",
         "items": [{
             "text": "menu 3.1",
@@ -106,7 +91,7 @@
         }]
     }, {
         "title": "Cerebro PV",
-        "iconCls": "money",
+        "iconCls": "xf135@FontAwesome",
         "id": "4",
         "items": [{
             "text": "menu 4.1",
@@ -131,7 +116,7 @@
         }]
     }, {
         "title": "Cerebro NR13",
-        "iconCls": "money",
+        "iconCls": "xf06d@FontAwesome",
         "id": "4",
         "items": [{
             "text": "menu 4.1",

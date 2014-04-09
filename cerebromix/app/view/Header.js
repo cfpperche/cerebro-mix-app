@@ -1,6 +1,10 @@
 Ext.define('CerebroMix.view.Header', {
     extend: 'Ext.container.Container',
 
+    requires: [
+        'CerebroMix.view.toolbar.Toolbar'
+    ],
+
     alias: 'widget.appheader',
     id: 'app-header',
     height: 52,
@@ -16,7 +20,8 @@ Ext.define('CerebroMix.view.Header', {
         html: 'Cerebro Mix',
         flex: 1
     }, {
-        xtype: 'component',
+        xtype: 'apptoolbar',
+        id: 'app-header-toolbar',
         flex: 6
     }]
 });
